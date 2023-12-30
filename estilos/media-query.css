@@ -33,6 +33,16 @@ Grandes telas: acmia de 1200px
     div#formulario > p {
         font-size: 1em;
     }
+
+    form > div.campo {
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    form > div.campo > input {
+        width:70%
+    }
 }
 @media screen and (min-width: 992px) {
 
@@ -63,14 +73,40 @@ Grandes telas: acmia de 1200px
         font-size: 1.2em;
     }
 
+    form > div.campo {
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    form > div.campo{
+        margin-top: 20px;
+    }
+    form > div.campo > input {
+        width:70%;
+        padding: 10px;
+        font-size: 0.95em;
+    }
+    form a.botao{
+        margin-bottom: 15px;
+    }
+    form > input[type=submit]{
+        font-size: 1.1em;
+    }
+    i{
+        font-size: 1.2em;
+        font-weight: bolder;
+    }
 
 }
-
+/*Para celular em modo retrato
+------------------------------------------------------------------------------*/
 @media screen and (max-width: 768px) and (orientation: landscape){
     section#login{
         height: 90vh;
         width: 90vw;
         max-width: 950px;
+        min-height: 300px;
     }
 
     section#login > div#imagem {
@@ -83,6 +119,17 @@ Grandes telas: acmia de 1200px
         float: right;
         width: 55%;
         height: 100%;
+        
+    }
+
+    form > div.campo {
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+    form > div.campo > input {
+        width:70%
     }
 
 }
