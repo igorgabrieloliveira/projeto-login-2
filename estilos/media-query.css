@@ -43,6 +43,7 @@ Grandes telas: acmia de 1200px
     form > div.campo > input {
         width:70%
     }
+    
 }
 @media screen and (min-width: 992px) {
 
@@ -92,6 +93,7 @@ Grandes telas: acmia de 1200px
     }
     form > input[type=submit]{
         font-size: 1.1em;
+        
     }
     i{
         font-size: 1.2em;
