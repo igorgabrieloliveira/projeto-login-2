@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Tela de login</title>
 </head>
 <body>
@@ -16,8 +17,20 @@
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
-                <form action="login.php" method="post">
-                    
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <i class='bx bxs-envelope'></i>
+                        <input type="email" name="login" id="idlogin" placeholder="Seu e-mail" autocomplete="email" required>
+                        <label for="idlogin">Login</label>
+                    </div>
+                    <div class="campo">
+                        <i class='bx bx-key'></i>
+                        <input type="password" name="senha" id="idsenha" placeholder="Sua senha" required minlength="8" maxlength="20">
+                        <label for="idsenha">Senha</label>
+                    </div>
+                    <a href="esqueci.html">Esqueci minha senha</a>
+                    <input type="submit" value="Entrar">
+
                 </form>
             </div>
 
